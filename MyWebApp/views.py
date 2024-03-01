@@ -63,9 +63,6 @@ def user_data_form(request):
                 for chunk in user_data.document.chunks():
                     f.write(chunk)
                     
-            # with open(message_path, 'wb') as f:
-            #     for chunk in user_data.message.chunks():
-            #         f.write(chunk)
 
             return redirect('success')
     else:
